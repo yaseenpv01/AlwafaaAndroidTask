@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#F8F5F5">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delivery Address"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        ></TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            >
+
+            <TextView
+                android:id="@+id/citytext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="City"
+                android:textSize="16dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/areatext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Area/Locality"
+                android:textSize="16dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/black"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/streettext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Street name"
+                android:textSize="16dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="60dp"
+                android:textColor="@color/black"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/buildingnametext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Building name"
+                android:textSize="16dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="90dp"
+                android:textColor="@color/black"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/landmarktext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Landmark"
+                android:textSize="16dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="120dp"
+                android:textColor="@color/black"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/phonenotext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1234567890"
+                android:textSize="16dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="150dp"
+                android:textColor="@color/black"
+                ></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="200dp"
+                >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delete"
+                    android:backgroundTint="#FF5B62"
+                    android:layout_marginLeft="30dp"
+                    ></Button>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Edit"
+                    android:backgroundTint="#F8437D"
+                    android:layout_marginLeft="60dp"
+                    ></Button>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</LinearLayout>
