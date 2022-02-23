@@ -138,10 +138,20 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/showdatambtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Show Data"
+        android:layout_gravity="center"
+        android:backgroundTint="#F8437D"
+        ></Button>
+
+    <Button
         android:id="@+id/confirmbtn"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="50dp"
         android:text="Confirm"
         android:layout_gravity="center"
         android:backgroundTint="#F8437D"

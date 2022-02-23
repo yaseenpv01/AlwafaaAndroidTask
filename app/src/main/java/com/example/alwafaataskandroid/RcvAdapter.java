@@ -15,14 +15,14 @@ import java.util.zip.Inflater;
 public class RcvAdapter extends RecyclerView.Adapter<RcvAdapter.ViewHolder> {
 
     private Context context;
-    private ArrayList<Address> arrayList;
+    private ArrayList<AddrResponse> arrayList;
 
 
-    public RcvAdapter(Context applicationContext, ArrayList arrayList) {
 
-        this.context=applicationContext;
-        this.arrayList=arrayList;
+    public RcvAdapter(ArrayList<AddrResponse> recycleDataArrayList, AddressListView addressListView) {
 
+        this.context=addressListView;
+        this.arrayList=recycleDataArrayList;
     }
 
     @NonNull
@@ -39,13 +39,13 @@ public class RcvAdapter extends RecyclerView.Adapter<RcvAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
-        Address address=arrayList.get(position);
-        holder.tvcity.setText(address.getCity());
+        AddrResponse address=arrayList.get(position);
+        holder.tvcity.setText(address.getCity_name());
         holder.tvarea.setText(address.getArea());
-        holder.tvstreetname.setText(address.getStreetname());
-        holder.tvbuildingname.setText(address.getBuildingname());
-        holder.tvnearbylandmark.setText(address.getNearbylandmark());
-        holder.tvphone.setText(address.getPhone());
+        holder.tvstreetname.setText(address.getStreet_name());
+        holder.tvbuildingname.setText(address.getBuilding_name());
+        holder.tvnearbylandmark.setText(address.getNearest_landmark());
+        holder.tvphone.setText(address.getMobile_number());
 
     }
 
